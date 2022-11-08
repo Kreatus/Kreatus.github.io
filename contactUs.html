@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-contactUs.css" />
+    <link rel="stylesheet" href="style-all.css" />
+    <script src="hamburger.js" defer></script>
+    <title>Restaurant Template</title>
+  </head>
+  <body>
+    <div class="head-container">
+      <div class="logo"></div>
+      <div class="nav-bar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="promotion.html">Promotions</a></li>
+          <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <div class="ham-structure">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+    <div class="ham-menu">
+      <div class="ham-menu-list"></div>
+      <div class="ham-menu-list"></div>
+      <div class="ham-menu-list"></div>
+    </div>
+    <div class="main-container">
+      <div class="form-container">
+        <form action="" method="post">
+          <label for="fname">First Name :</label>
+          <input type="text" placeholder="First Name" name="fname" /><label
+            for="lname"
+            >Last Name :</label
+          ><input type="text" placeholder="Last Name" name="lname" /><label
+            for="email"
+            >Email :</label
+          ><input
+            type="email"
+            placeholder="example@something.com"
+            name="email"
+          /><textarea placeholder="Write To Us..."></textarea
+          ><input id="submit-btn" type="submit" />
+        </form>
+      </div>
+      <div class="vl"></div>
+      <div class="restaurant-info-container">
+        <h1>OR</h1>
+        <h2>Reach Us on :</h2>
+        <div class="contact-box">
+          <ul>
+            <div>
+              <li>
+                <a href="#">Instagram</a>
+              </li>
+              <li><a href="#">Facebook</a></li>
+              <li>
+                <a href="#">Twitter</a>
+              </li>
+              <li><a href="#">WhatsApp</a></li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-container">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.2857750857!2d-80.35604259661837!3d45.423740322761645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2b92017cae9311%3A0xf2860c32411cf5cd!2sDick%20Island!5e0!3m2!1sen!2smy!4v1637895608506!5m2!1sen!2smy"
+          height="100%"
+          width="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="write-something">
+        <ul>
+          <li><a href="#" id="faq-a">FAQ</a></li>
+          <li>Contact Number : <span class="copy-click">01234123512</span></li>
+          <li>Email : <span class="copy-click">ishtayk@gmail.com</span></li>
+          <li>Fax : <span class="copy-click">03131</span></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.getElementById("submit-btn").addEventListener("click", (e) => {
+      e.preventDefault();
+      alert("Thank you for contacting Us");
+      setTimeout((e) => {
+        window.location = "index.html";
+      }, 2000);
+    });
+  </script>
+</html>

@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: repeating-radial-gradient(
+    rgb(255, 196, 0),
+    rgb(255, 153, 0)
+  );
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Comfortaa", cursive;
+}
+/*head*/
+
+/* .ham-menu:hover {
+
+} */
+/*body*/
+.body-container {
+  position: relative;
+  height: 100%;
+  min-height: 700px;
+  width: 80%;
+  background-image: url("./imgs/wooden-background2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 8px;
+  border-top-left-radius: 0;
+  padding: 1em;
+  gap: 1em;
+  transform: translateY(35%);
+  box-shadow: 0 2px 2px 0 rgba(65, 36, 3, 0.822);
+}
+.card-parent {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px 0 rgb(255, 255, 255);
+  overflow: hidden;
+}
+.card {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(99, 99, 99);
+  transition: all 500ms ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  border-radius: 8px;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: transform 0.5s ease-in;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.description h1 {
+  color: white;
+
+}
+.desc {
+  color: wheat;
+}
+.card-parent:hover .description,
+.card-parent:focus .description {
+  transform: translateY(-100%);
+}
+
+.card-parent:nth-of-type(1) .card {
+  background-image: url("./imgs/food-menu.jpg");
+}
+.card-parent:nth-of-type(2) .card {
+  background-image: url("./imgs/take-away.jpg");
+}
+.card-parent:nth-of-type(3) .card {
+  background-image: url("./imgs/delivery.jpg");
+}
+.card-parent:nth-of-type(4) .card {
+  background-image: url("./imgs/Dine-in.jpg");
+}
+.card-parent:nth-of-type(5) .card {
+  background-image: url("./imgs/chefs.jpg");
+}
+.card-parent:nth-of-type(6) .card {
+  background-image: url("./imgs/we-are-hiring.jpg");
+  background-position: center bottom;
+}
+.card-parent:hover.card-parent:nth-of-type(6) .card {
+  background-image: url("./imgs/we-are-hiring.jpg");
+  background-position: center top;
+}
+.card-parent:hover .card,
+.card-parent:focus .card {
+  transform: scale(1.1);
+}
+
+/* foot*/
+

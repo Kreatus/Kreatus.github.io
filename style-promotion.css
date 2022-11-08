@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  background-image: repeating-radial-gradient(
+    rgb(255, 196, 0),
+    rgb(255, 153, 0)
+  );
+  flex-direction: column;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 200vh;
+  font-family: Comfortaa, cursive;
+}
+
+/*head cont*/
+/*main con*/
+
+.main-container {
+  height: 80%;
+  width: 80%;
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 2em;
+  box-shadow: black 1px 1px 1px 1px;
+}
+.con {
+  height: 25%;
+  width: 100%;
+  background-color: inherit;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cards-div {
+  position: relative;
+  height: 100%;
+  width: 90%;
+  background-color: inherit;
+  display: flex;
+  overflow: hidden;
+}
+.card {
+  position: relative;
+  height: 100%;
+  width: 20%;
+  background-color: coral;
+  border-radius: 8px;
+  transition: transform 0.5s ease-in-out;
+  opacity: 0.5;
+  margin-right: 20px;
+}
+
+/* foot container*/
+.footer-container {
+  position: relative;
+  justify-self: flex-end;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.445);
+  transition: background-color 0.5s ease-in-out;
+}
+.map {
+  width: 45%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.write-something ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  transition: color 0.5s ease-in-out;
+}
+.footer-container:hover {
+  background-color: #333;
+  box-shadow: rgb(255, 196, 0) 0 2px 2px 20px;
+}
+
+.footer-container:hover .write-something ul,
+.footer-container:hover #faq-a {
+  color: #000;
+}
+.copy-click {
+  cursor: pointer;
+}
+#faq-a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.5s ease-in-out;
+}
