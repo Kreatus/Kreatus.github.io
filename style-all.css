@@ -43,7 +43,7 @@ body{
   overflow: hidden;
 }
 .logo {
-  content: url("https://source.unsplash.com/random");
+  /* content: url("https://source.unsplash.com/random"); */
   background-size: cover;
   height: 100%;
   min-height: 100px;
@@ -112,7 +112,10 @@ body{
 }
 .ham-menu {
   position: absolute;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   height: 100%;
   width: 100%;
   max-width: 350px;

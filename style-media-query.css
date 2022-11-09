@@ -1,15 +1,24 @@
-@media (min-width:800px) {
+@media (min-width:600px) {
   .body-container{
     grid-template-columns: 1fr 1fr;
   }
   .nav-bar>ul{
     display: flex;
+    font-size: 1.5rem;
+    justify-content: space-around;
   }
   .hamburger{
     display: none;
   }
 }
 @media (min-width:1200px) {
+  .logo{
+    max-width: fit-content;
+  }
+  
+  .nav-bar>ul{
+    font-size: 3rem;
+  }
   .body-container{
     grid-template-columns: repeat(3,1fr) ;
   }
