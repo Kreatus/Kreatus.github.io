@@ -1,0 +1,17 @@
+@media (min-width:800px) {
+  .body-container{
+    grid-template-columns: 1fr 1fr;
+  }
+  .nav-bar>ul{
+    display: flex;
+  }
+  .hamburger{
+    display: none;
+  }
+}
+@media (min-width:1200px) {
+  .body-container{
+    grid-template-columns: repeat(3,1fr) ;
+  }
+  
+}
